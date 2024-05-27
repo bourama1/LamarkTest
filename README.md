@@ -1,7 +1,7 @@
 # Datový analytik úloha
 ## Technologie
-- použita databáze PostgreSQL
-- k vizualizaci použit Power BI
+- použita databáze PostgreSQL16 s ide pgAdmin4
+- k vizualizaci použit Microsoft Power BI, soubor přiložen
 - výstupy skriptů uloženy do Excelu, formát xlsx
 ## Postup spuštění
 1. CreateTables.sql
