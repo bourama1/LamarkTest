@@ -1,7 +1,7 @@
 -- objednavky dle mesicu sjednocene pro vsechny roky
 SELECT
 	TO_CHAR(ORDER_DATE, 'Month') AS MONTH,
-	COUNT(*) AS TOTAL_ORDERS
+	COUNT(DISTINCT ORDER_ID) AS TOTAL_ORDERS
 FROM
 	ORDERS
 GROUP BY
