@@ -39,3 +39,10 @@
   - shodné s průměrným ziskem, pouze použije funkci SUM pro součet profitů místo AVG pro průměr
 9. UserTop10
  - spočte pomocí COUNT počet všech různých objednávek pro daného uživatele, agreguje dle toho uživatele a výstup omezí na 10 uživatelů s nejvíce objednávkami sestupně
+## Výstupy z Power BI
+### Analýza produktů
+![image](https://github.com/bourama1/LamarkTest/assets/73535167/3da1ffe0-67cd-47c4-88e9-f411af4eb3fa)
+### Analýza objednávek + absolutní a průměrný profit z objednávek
+![image](https://github.com/bourama1/LamarkTest/assets/73535167/ed982a31-e265-433b-a1b1-9ec1b245c903)
+### Analýza uživatelů
+![image](https://github.com/bourama1/LamarkTest/assets/73535167/06eae2b9-9e4d-417f-815b-60119f15252d)
