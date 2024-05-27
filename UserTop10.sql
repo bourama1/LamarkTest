@@ -1,6 +1,12 @@
 -- top 10 uzivatelu
-SELECT user_id, COUNT(*) AS total_orders
-FROM orders
-GROUP BY user_id
-ORDER BY total_orders DESC
-LIMIT 10;
+SELECT
+	USER_ID,
+	COUNT(*) AS TOTAL_ORDERS
+FROM
+	ORDERS
+GROUP BY
+	USER_ID
+ORDER BY
+	TOTAL_ORDERS DESC
+LIMIT
+	10;

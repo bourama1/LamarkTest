@@ -1,2 +1,5 @@
 -- prumerna cena produktu
-SELECT AVG(price) AS average_price FROM products;
+SELECT
+	AVG(PRICE) AS AVERAGE_PRICE
+FROM
+	PRODUCTS;

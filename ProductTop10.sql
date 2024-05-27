@@ -1,6 +1,12 @@
 -- top 10 nejrpodavanejsich produktu
-SELECT product_id, SUM(quantity) AS total_quantity_sold
-FROM orders
-GROUP BY product_id
-ORDER BY total_quantity_sold DESC
-LIMIT 10;
+SELECT
+	PRODUCT_ID,
+	SUM(QUANTITY) AS TOTAL_QUANTITY_SOLD
+FROM
+	ORDERS
+GROUP BY
+	PRODUCT_ID
+ORDER BY
+	TOTAL_QUANTITY_SOLD DESC
+LIMIT
+	10;

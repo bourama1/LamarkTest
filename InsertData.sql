@@ -1,5 +1,7 @@
 -- Smazání existujících dat z tabulek
-TRUNCATE TABLE orders, products, users RESTART IDENTITY CASCADE;
+TRUNCATE TABLE ORDERS,
+PRODUCTS,
+USERS RESTART IDENTITY CASCADE;
 
 -- Generování dat pro tabulku 'products'
 DO $$

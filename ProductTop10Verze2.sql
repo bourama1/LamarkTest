@@ -1,0 +1,12 @@
+-- Top 10 nejprodávanějších produktů dle počtu objednávek
+SELECT
+	PRODUCT_ID,
+	COUNT(DISTINCT ORDER_ID) AS TOTAL_ORDERS
+FROM
+	ORDERS
+GROUP BY
+	PRODUCT_ID
+ORDER BY
+	TOTAL_ORDERS DESC
+LIMIT
+	10;

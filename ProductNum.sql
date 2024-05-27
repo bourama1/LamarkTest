@@ -1,2 +1,5 @@
 -- pocet produktu
-SELECT COUNT(*) AS total_products FROM products;
+SELECT
+	COUNT(*) AS TOTAL_PRODUCTS
+FROM
+	PRODUCTS;

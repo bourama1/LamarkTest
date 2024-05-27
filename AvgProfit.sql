@@ -1,4 +1,6 @@
 -- prumerny profit z objednavky
-SELECT AVG((p.price - p.cost) * o.quantity) AS average_profit_per_order
-FROM orders o
-JOIN products p ON o.product_id = p.product_id;
+SELECT
+	AVG((P.PRICE - P.COST) * O.QUANTITY) AS AVERAGE_PROFIT_PER_ORDER
+FROM
+	ORDERS O
+	JOIN PRODUCTS P ON O.PRODUCT_ID = P.PRODUCT_ID;

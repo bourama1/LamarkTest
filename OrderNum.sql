@@ -1,2 +1,5 @@
 -- pocet objednavek
-SELECT COUNT(*) AS total_orders FROM orders;
+SELECT
+	COUNT(*) AS TOTAL_ORDERS
+FROM
+	ORDERS;

@@ -1,4 +1,6 @@
 -- celkovy zisk
-SELECT SUM((p.price - p.cost) * o.quantity) AS total_profit
-FROM orders o
-JOIN products p ON o.product_id = p.product_id;
+SELECT
+	SUM((P.PRICE - P.COST) * O.QUANTITY) AS TOTAL_PROFIT
+FROM
+	ORDERS O
+	JOIN PRODUCTS P ON O.PRODUCT_ID = P.PRODUCT_ID;

@@ -1,24 +1,29 @@
+-- Smazani tabulek
+DROP TABLE PRODUCTS,
+USERS,
+ORDERS;
+
 -- Vytvoření tabulky 'products'
-CREATE TABLE products (
-    product_id SERIAL PRIMARY KEY,
-    product_name VARCHAR(255) NOT NULL,
-    price DECIMAL(10, 2) NOT NULL,
-    cost DECIMAL(10, 2) NOT NULL
+CREATE TABLE PRODUCTS (
+	PRODUCT_ID SERIAL PRIMARY KEY,
+	PRODUCT_NAME VARCHAR(255) NOT NULL,
+	PRICE DECIMAL(10, 2) NOT NULL,
+	COST DECIMAL(10, 2) NOT NULL
 );
 
 -- Vytvoření tabulky 'users'
-CREATE TABLE users (
-    user_id SERIAL PRIMARY KEY,
-    user_name VARCHAR(255) NOT NULL
+CREATE TABLE USERS (
+	USER_ID SERIAL PRIMARY KEY,
+	USER_NAME VARCHAR(255) NOT NULL
 );
 
 -- Vytvoření tabulky 'orders'
-CREATE TABLE orders (
-    order_id SERIAL PRIMARY KEY,
-    user_id INT,
-    product_id INT,
-    quantity INT,
-    order_date DATE,
-    FOREIGN KEY (user_id) REFERENCES users(user_id),
-    FOREIGN KEY (product_id) REFERENCES products(product_id)
+CREATE TABLE ORDERS (
+	ORDER_ID SERIAL PRIMARY KEY,
+	USER_ID INT,
+	PRODUCT_ID INT,
+	QUANTITY INT,
+	ORDER_DATE DATE,
+	FOREIGN KEY (USER_ID) REFERENCES USERS (USER_ID),
+	FOREIGN KEY (PRODUCT_ID) REFERENCES PRODUCTS (PRODUCT_ID)
 );
