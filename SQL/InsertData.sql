@@ -1,4 +1,4 @@
--- Smazání existujících dat z tabulek
+-- Smazání existujících dat z tabulek a resetování identity sloupců
 TRUNCATE TABLE ORDERS,
 PRODUCTS,
 USERS RESTART IDENTITY CASCADE;
@@ -14,6 +14,7 @@ BEGIN
             ROUND((5 + random() * 45)::numeric, 2)
         );
     END LOOP;
+    RAISE NOTICE 'Inserted 300 products.';
 END $$;
 
 -- Generování dat pro tabulku 'users'
@@ -23,6 +24,7 @@ BEGIN
         INSERT INTO users (user_name) 
         VALUES ('User ' || i::TEXT);
     END LOOP;
+    RAISE NOTICE 'Inserted 300 users.';
 END $$;
 
 -- Generování dat pro tabulku 'orders'
@@ -43,4 +45,5 @@ BEGIN
             NOW()::DATE - (random() * 365)::INT
         );
     END LOOP;
+    RAISE NOTICE 'Inserted 300 orders.';
 END $$;
